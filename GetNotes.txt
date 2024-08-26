@@ -21,35 +21,14 @@ Do keep in mind if your computer loses the data before you can push it to the se
 
 Git is a Distributed Control System.
 
-                                            Git Commands have a *C next to them.
+                                            *Git Commands*
 
-git init will create a Git repository. *C
+git init will create a Git repository. *
 .git folder (the repository) is were your database lives for keeping track of what changes you made and your code repository.
 
 NOTE For VS code you can actually use ctr ` to open the terminal.
 
-git status will tell you the state of your repository and if you have any commits. *C
+git status will tell you the state of your repository and if you have any commits. *
 You will use git status quite often.
 
-git add fileName will add your file to a git commit meaning that you can then save the file to git. *C
-Then use git commit -m "yourTextForTheCommit" to actually make a commit with the files you added. *C
-
-
-
-Working Directory is your untracked changes.
-Add moves your file to the Staging Area.
-Commiting then moves the file to the Local Repository.
-
-git log will show you the git history or your commits. *C
-
-Next to each commit in the history is a unique value that is a SHA-1 hash of your commit.
-If you ever need to reference this specific commit you can use the hash value because the hash will always be unique.
-
-git log --oneline will give you a shorter hash and put all of the history on just 1 line. *C
-
-git add . will add everything in the current directory and down. C*
-
-git add -A will add everything. c*
-
-git reset Head~1 will undo the last commit you did. You can change the number after ~ to say how many commits to undo. C*
-IF you do this you will need to run the add again the entire commit is now gone.
+git add fileName
