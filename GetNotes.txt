@@ -1,0 +1,34 @@
+                                        *Git*
+
+Why Do We Need Version Control?
+Version Control lets us look at older versions of the code and lets us roll back our code if we make mistakes.
+
+Distributed Version Control Systems and Centralized Version Control Systems.
+
+Centralized Version Control.
+You must stay connected to the server to see the history of your app and to commit changes to the server.
+Branching is also more expensive in Centralized Version Control (branching is working sepertatly so you don't conflict with anyone else).
+Branching has to create a complete copy of the code to branch and that is expensive.
+
+Some Centralized Version Control Systems also use Pessimistic locking so that if multiple people touch the same file only the first person can actually do stuff with while everyone after is given an error.
+If someone doesn't check the file back in then nobody has access to the file until the file is checked back in or someone overrides the lock.
+
+Distributed Version Control.
+You need a connection to the server to first retrieve the source code but if you are disconnected you can still make commits and the commit can be pushed up after you reconnect.
+You also get the history with your first retrievel of the source code so you can look at the history even if you are disconnected from the server.
+Branching is also cheaper in Distributed Version Control because it uses a pointer.
+Do keep in mind if your computer loses the data before you can push it to the server your commits will not be saved.
+
+Git is a Distributed Control System.
+
+                                            *Git Commands*
+
+git init will create a Git repository. *
+.git folder (the repository) is were your database lives for keeping track of what changes you made and your code repository.
+
+NOTE For VS code you can actually use ctr ` to open the terminal.
+
+git status will tell you the state of your repository and if you have any commits. *
+You will use git status quite often.
+
+git add fileName
